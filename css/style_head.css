@@ -1,0 +1,163 @@
+          header {color:black; font-size:25px; font-weight:bold;
+                  padding-left:0px; padding-bottom:10px; padding-top:20px;
+                  font-style:oblique;}
+          h1 {color:white; font-size:15px; background-color:blue; width: 400px;}
+          ol {margin-left: 0;}
+          p {float:left; padding:0px; margin:0px;}
+          body /* {background-image:url(./images/5_1.jpg);
+                background-repeat:no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-size: 1140px;
+                height: 630px;
+              }  */
+                .menubar {
+                	border: none;
+                	border: 0px;
+                	margin: 0px;
+                	padding-top: 0px;
+                	font-size: 20px;
+                	font-weight: bold;
+                  margin-left: 120px;
+                  margin-right: 120px;
+                }
+                .menubar ul {
+                	background-color: blue;
+                	height: 30px;
+                	list-style:none;
+                	margin: 0;
+                	padding: 0;
+                }
+                .menubar li {
+                	float: left;
+                	padding: 0px;
+                  width: 150px;
+                }
+                .menubar li a {
+                	background: blue;
+                	color: white;
+                	display: block;
+                	font-weight: normal;
+                	line-height: 30px;
+                	margin: 0px;
+                	padding: 0px 10px;
+                	text-align: left;
+                	text-decoration:none;
+                }
+                .menubar li a:hover, .menubar ul li:hover a {
+                  background: darkgray;
+                	color:blue;
+                	text-decoration: none;
+                  visibility: visible;
+                  display: inline-block;
+                }
+                .menubar li ul {
+                	background: rgb(109, 109, 109);
+                	display: none;  /* 평상시에는 드랍메뉴가 안 보이기 */
+                	height: 20px;
+                	padding: 0px;
+                	margin: 0px;
+                	border: 0px;
+                	position: absolute;
+                	width: 170px;
+                  z-index: 1;
+                }
+                .menubar li:hover ul {
+                	display: block; /* 마우스 커서 올리면 드랍메뉴 보이기 */
+                  visibility: visible;
+                  z-index: 1;
+                }
+                .menubar li li {
+                	background-color: gainsboro;
+                  color: black;
+                  font-weight: bold;
+                	display: block;
+                	float: left;
+                	margin: 0px;
+                	padding: 0px;
+                	width: 170px;
+                  visibility: visible;
+                  display: inline-block;
+                }
+                .menubar li:hover li a {
+                	background: none;
+                  visibility: visible;
+                  display: block;
+                }
+                .menubar li ul a {
+                	display: block;
+                	height: 30px;
+                	font-size: 15px;
+                	font-style: normal;
+                	margin: 0px;
+                	padding: 0px 10px 0px 15px;
+                	text-align: left;
+                  color: black;
+                  visibility: visible;
+                  display: block;
+                }
+                .menubar li ul a:hover, .menubar li ul li:hover a {
+                  background-color: black;
+                	border: 0px;
+                	color: gainsboro;
+                  font-weight: bold;
+                	text-decoration: none;
+                  vertical-align: baseline;
+                  visibility: visible;
+                  display: block;
+                }
+                div.bottom {
+                  color: black;
+                  margin-left: 120px;
+                  margin-right: 0px;
+                  position: fixed;
+                  width: 1110px;
+                  bottom: 0px;
+                  background-color: darkgray;
+                  font-size:15px;
+                }
+                .noticias {
+                  color: black;
+                  height: 160px;
+                  width:850px;
+        /*          box-shadow:4px 4px 4px rgba(0,0,0,0.3); */
+                  margin-top: 0px;
+                  margin-left: 40px; margin-bottom:0px;
+        /*          border:solid 1px; border-color: black; */
+                  font-family:Arial, Helvetica, sans-serif, "Arial Narrow", "Agency FB";
+                  font-size:14px;
+        /*          background-color: white; */
+                  list-style: none;
+                  float: left;
+                }
+                .noticias li {
+                  float:left;
+                  list-style: none;
+                  width:180px;
+                  margin-right: 10px;
+                }
+                .noticias li a {
+                  color:black;
+                  font-size:12px; text-decoration:none;
+                }
+                .imgPeq {
+                  width:180px;
+                  height:90px;
+        /*          float:left;  */
+                  padding:0px;
+                  margin-left:0px;
+                  margin-right:10px;
+                  border:1px #FFFFFF solid;
+                  box-shadow: 1px 1px 2px rgba(0,102,204,.2);
+                }
+
+        /*        div.k2ItemsBlock ul li div.moduleItemIntrotext .imgPeq {
+                  width:200px;
+                  height:120px;
+                  float:left;
+                  padding:0px;
+                  margin-left:0px;
+                  margin-right:10px;
+                  border:1px #FFFFFF solid;
+                  box-shadow: 1px 1px 2px rgba(0,102,204,.2);
+                }  */
