@@ -1,0 +1,21 @@
+Si Internet es un sistema operativo,
+Web es una aplicaci?n que se ejecuta en el sistema operativo.
+Web es un subconjunto de Internet.
+Adem?s, hay muchas tecnolog?as que son equivalentes a la web.
+Tambi?n ustedes pueden desarrollar tecnolog?as que son 
+equivalentes a la Web.
+En 1960, naci? Internet.
+En 1990, la web comenz?.
+¢¯D?nde nacio la web?
+Est? en Suiza.
+Hay un instituto bien conocido llamado European Particle 
+Physics Laboratory (CERN) en Suiza.
+En 1980, una persona importante llega al instituto.
+Tim Berners-Lee, quien ser? el fundador de la web m?s tarde.
+Cre? el primer navegador web del mundo en noviembre de 1990.
+El nombre de este navegador web era World Wide Web.
+M?s tarde, el nombre de este navegador se convierte en el 
+nombre de la web.
+El 24 de diciembre de 1990, finalmente complet? servidor web.
+Di? a este servidor un nombre de dominio de info.cern.ch.
+Esta es la primera p?gina web del mundo.
