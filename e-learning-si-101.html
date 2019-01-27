@@ -1,0 +1,88 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+  <title>I.T.A-eLeaning</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style_head.css">
+  <link rel="stylesheet" href="./css/style_elearning.css">
+  <style>
+   .display {margin-left:150px; margin-top:0px;}
+  </style>
+</head>
+
+<body>
+  <p>
+  <a href=index.html><img src="./images/ita_logo.png" width="130" height="100"></a>
+  </p>
+
+  <header>Instituto Tecnologico "Ayacucho" &nbsp &nbsp
+        <a href="e-learning-menu.html" style="color:red; text-decoration:none;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp e-LEARNING system</a>
+        <a href="e-learning-si-menu.html" style="color:black; font-style: normal; font-size:30px; text-shadow: 2px 2px 8px #FF0000;
+                  float:right; margin-right:150px;">Sistemas Informaticos</a>
+  </header>
+  <div class="menu_elearning">
+      <div><br></div>
+      <div>
+        <ul>
+          <li><a style="background-color:blue; color:white; font-size:20px; padding:10px; text-align:center; margin-top:0px;
+            font-style:normal;">
+            <strong>WEB</strong></a></li>
+          <li><a style="color:Black; font-size:15px; padding:20px; text-align:center; margin-top:0px;
+            font-style:oblique;">HTML Tag</a></li>
+        </ul>
+      </div>
+      <div class="display">
+          <video width="800" height="250" controls muted autoplay>
+             <source src="./data/si_101.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div class="display">
+          <iframe src="./data/si_101.mht" style="border-color: blue; background-color: gainsboro;
+                  width:800px; height:240px; display:block;"></iframe>
+      </div>
+  </div>
+
+  <!-- common bottom -->
+  <style>
+  .popup {
+    position: relative;
+    cursor: pointer;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    margin-left: -235px;
+  }
+  .popup .popuptext::after {
+    content: "";
+  }
+  .popup .show {
+    visibility: visible;
+  }
+  </style>
+  <script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+  <div class="bottom">
+  <div class="address" style="width:500px; float:left; color:darkblue;"> &nbsp <strong>Dirección:</strong><br>
+       &nbsp Plaza Villarroel, Av Busch, La Paz, Bolivia &nbsp (Tel) 22229701
+  </div>
+  <a href="e-book.html" style="float:left; margin-left:450px; margin-top:5px;">
+     <img src="./images/e-book.png" style="width:30px; height:30px;"></a>
+  <div>
+    <div class="popup" onclick="myFunction()" style="float:left; margin-left:20px; margin-top:5px;">
+       <img src="./images/googlemap.jpg" style="width:30px; height:30px;">
+       <span class="popuptext" id="myPopup"><img src="./images/ita-map.jpg" style="width:300px; height:300px;"></span>
+    </div>
+    <a href="https://www.facebook.com/tecnologico.ayacuho.formacion.profesional" target="_blank" style="float:left; margin-left:20px; margin-top:5px;">
+       <img src="./images/facebook40x40.png" style="width:30px; height:30px;"></a>
+  </div>
+  </div>
+  </body>
+  </html>

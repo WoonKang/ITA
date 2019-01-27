@@ -1,0 +1,165 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+  <title>I.T.Ayachcho</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style_head.css">
+  <link rel="stylesheet" href="./css/style_elearning.css">
+
+</head>
+
+<body>
+  <p>
+  <a href=index.html><img src="./images/ita_logo.png" width="130" height="100"></a>
+  </p>
+  <header>Instituto Tecnologico "Ayacucho"
+  </header>
+  <div class="menubar">
+    <ul>
+      <li><a href="intro_01.html" style="font-size:15px; font-style:italic; font-weight:bold;">Saludo de Rector</a>
+      <li><a href="#">Sobre I.T.A.</a>
+        <ul>
+          <li><a href="sobre_ita_01.html">Marco Institucional</a></li>
+          <li><a href="sobre_ita_02.html">Filosofia Institucional</a></li>
+          <li><a href="sobre_ita_03.html">Organigrama</a></li>
+          <li><a href="#">Historia</a></li>
+        </ul></li>
+      </li>
+      <li><a href="#">Carreras</a>
+        <ul>
+          <li><a href="carrera_sistemas.html">Sistemas Informaticos</a></li>
+          <li><a href="carrera_m_industrial.html">Mecanica Industrial</a></li>
+          <li><a href="carrera_electronica.html">Electronica</a></li>
+          <li><a href="carrera_electromecanica.html">Electro Mecanica</a></li>
+          <li><a href="carrera_automotoriz.html">MecanicaAutomotoriz</a></li>
+          <li><a href="carrera_construccion.html">Construccion Civil</a></li>
+        </ul></li>
+      <li><a href="noticias.html">Noticias</a>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="#" style="font-style:oblique; color:yellow;">Administrasión</a></li>
+      <li style="float:right">
+        <a style="font-style:oblique; color:yellow;" href="e-learning-menu.html">e-learning</a>
+      </li>
+    </ul>
+  </div>
+
+  <?php
+  function list_foto(){
+    $list=scandir('./noticias/fotos');
+    $i=0;
+    while($i<count($list)){
+      if($list[$i] != '.'){
+        if($list[$i] != '..'){
+          if($list[$i] < 6 ){ $filename[$i]=substr($list[$i], 0, -4); $result=$list[$i];
+          ?>
+          <div style="width:200px; height:120px; float:left; margin-top:0px; margin-left:10px;">
+            <p style="margin-top:0; font-size:15px; margin-left:10px; color:blue;"><?=$filename[$i]?></p>
+            <a href="noticias-fotos.php?id=<?=$filename[$i]?>">
+            <img src="./noticias/fotos/<?php echo $result; ?>" width="200" height="120" style="margin-top:0px; margin-left:10px;"> </a>
+          </div>
+          <?php
+        } }
+      }
+      $i=$i+1;
+    }
+  }
+  ?>
+
+  <?php
+  function list_entertainment(){
+    $list=scandir('./noticias/entertainment');
+    $i=0;
+    while($i<count($list)){
+      if($list[$i] != '.'){
+        if($list[$i] != '..'){
+          if($list[$i] < 9 ){ $filename[$i]=substr($list[$i], 0, -4);
+          ?>
+          <a href="noticias-entertainment.php?id=<?=$filename[$i]?>">
+          <ol style="margin-top:5; font-size:17px; margin-left:20px;"><?=$filename[$i]?></ol></a>
+          <?php
+        } }
+      }
+      $i=$i+1;
+    }
+  }
+  ?>
+
+   <div>
+     <a><br></a>
+     <a style="color:black; margin-left:150px; font-style: italic; font-weight: bold; font-size: 20px;">Las Noticias de ITA</a>
+     <a href="noticias-admin-fotos.php" style="color:black; margin-left:750px; font-style: italic; font-size: 17px;">(Gestiona las noticias)</a>
+   </div>
+   <div style="width:1100px; height:150px; margin-top:0px; margin-left:90px;">
+     <ol>
+     <?php
+       list_foto();
+      ?>
+     </ol>
+   </div>
+   <div style="margin-left:1070px; font-style: italic; font-size: 16px;">
+     <a href="noticias-mas-fotos.php" style="color:blue;">Más noticias .......></a>
+   </div>
+   <div>
+     <img src="./images/line_image.png" width=1100px style="margin-left:120px;">
+   </div>
+   <div>
+     <a><br></a>
+     <a style="color:black; margin-left:150px; font-style: italic; font-weight: bold; font-size: 20px;">Entretenimiento</a>
+<!--     <a href="noticias-admin-videos.php" style="color:black; margin-left:780px; font-style: italic; font-size: 17px;">(Gestiona las videos)</a> -->
+   </div>
+
+   <div style="width:1100px; margin-top:0px; margin-left:90px;">
+     <ol>
+     <?php
+       list_entertainment();
+      ?>
+    </ol>
+   </div>
+   <div style="margin-left:1045px; font-style: italic; font-size: 16px;">
+     <a href="noticias-mas-videos.php" style="color:blue;">Más entretenimiento..></a>
+   </div>
+
+  <!-- common bottom -->
+  <style>
+  .popup {
+    position: relative;
+    cursor: pointer;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    margin-left: -235px;
+  }
+  .popup .popuptext::after {
+    content: "";
+  }
+  .popup .show {
+    visibility: visible;
+  }
+  </style>
+  <script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+  <div class="bottom">
+  <div class="address" style="width:500px; float:left; color:darkblue;"> &nbsp <strong>Dirección:</strong><br>
+       &nbsp Plaza Villarroel, Av Busch, La Paz, Bolivia &nbsp (Tel) 22229701
+  </div>
+  <a href="e-book.html" style="float:left; margin-left:450px; margin-top:5px;">
+     <img src="./images/e-book.png" style="width:30px; height:30px;"></a>
+  <div>
+    <div class="popup" onclick="myFunction()" style="float:left; margin-left:20px; margin-top:5px;">
+       <img src="./images/googlemap.jpg" style="width:30px; height:30px;">
+       <span class="popuptext" id="myPopup"><img src="./images/ita-map.jpg" style="width:300px; height:300px;"></span>
+    </div>
+    <a href="https://www.facebook.com/tecnologico.ayacuho.formacion.profesional" target="_blank" style="float:left; margin-left:20px; margin-top:5px;">
+       <img src="./images/facebook40x40.png" style="width:30px; height:30px;"></a>
+  </div>
+  </div>
+  </body>
+  </html>
